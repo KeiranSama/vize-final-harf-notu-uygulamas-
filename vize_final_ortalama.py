@@ -32,4 +32,4 @@ elif sonuc >= 55:
 elif sonuc >= 50:
     print("Ortalama Notunuuz :", sonuc, "ve Harf Notunuz FF dır")
 else:
-    print("Sen Yarraklara Yan Basmışsın")
+    print("Sen bu dersi alttan al geçmiş olsun :(((")
