@@ -1,17 +1,39 @@
 
-vize1 =int(input("İlk vize Sonucunuzu Giriniz : "))
+while True:
+    try:
+        vize1 = int(input("İlk vize Sonucunuzu Giriniz : "))
 
+        break
+    except:
+        print("Girdiğiniz Değer Geçersizdir")
+
+        continue
 while vize1 > 100 or vize1 < 0:
-    print("Lütfen Geçerli bir değer giriniz")
-    vize1 = (input("İlk vize Sonucunuzu Giriniz : "))
-vize2 = int(input("ikinci vize Sonucunuzu Giriniz : "))
+        print("Lütfen Geçerli bir değer giriniz")
+        vize1 = int(input("İlk vize Sonucunuzu Giriniz : "))
+while True:
+    try:
+        vize2 = int(input("İkinci vize Sonucunuzu Giriniz : "))
+
+        break
+    except:
+        print("Girdiğiniz Değer Geçersizdir")
+
+        continue
 while vize2 > 100 or vize2 < 0:
-    print("Lütfen Geçerli bir değer giriniz")
-    vize2 = int(input("ikinci vize Sonucunuzu Giriniz : "))
-final = int(input("Final Sınavı sonucunuzu Giriniz :"))
+        print("Lütfen Geçerli bir değer giriniz")
+        vize2 = int(input("İkinci vize Sonucunuzu Giriniz : "))
+while True:
+    try:
+        final = int(input("Final Sonucunuzu Giriniz : "))
+
+        break
+    except:
+        print("Girdiğiniz Değer Geçersizdir")
+        continue
 while final > 100 or final < 0:
-    print("Lütfen Geçerli bir değer giriniz")
-    final = int(input("Final Sınavı Sonucunuzu Giriniz : "))
+        print("Lütfen Geçerli bir değer giriniz")
+        final = (input("İlk vize Sonucunuzu Giriniz : "))
 sonuc = int(float(vize1)*(3/10)) + (float(vize2)*(3/10)) + (float(final)*(4/10))
 if sonuc >= 90:
     print("Ortalama Notunuuz :", sonuc, "ve Harf Notunuz AA dır")
